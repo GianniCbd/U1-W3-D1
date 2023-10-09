@@ -193,8 +193,6 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-movies.forEach;
-
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
@@ -205,13 +203,8 @@ for (let i = 0; i < movies.length; i++) {
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
-const allMovies = [];
-
-movies.forEach((Title, i) => {
-  // console.log(movies[i].Title);
-  allMovies.push(movies[i].Title);
-});
-console.log(allMovies);
+const onlyTitle = movies.map((obj) => obj.Title);
+console.log(onlyTitle);
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
